@@ -1,0 +1,21 @@
+body {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div {
+    width: 120px;
+    height: 120px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    background: lightgreen;
+}
+
+div:nth-child(4n){
+    border-right: 2px solid black;
+}
+
+div:nth-child(n+13){
+    border-bottom: 2px solid black;
+}
+
