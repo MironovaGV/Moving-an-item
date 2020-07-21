@@ -37,7 +37,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              outputPath: './images',
+              outputPath: './img',
+              name: './goblin.png',
             },
           },
         ],
