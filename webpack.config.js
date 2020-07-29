@@ -2,13 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './js/app.js',
+  entry: './src/js/app.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [new HtmlWebpackPlugin({
-    template: './html/index.html',
+    template: './src/index.html',
     filename: './index.html',
   })],
   module: {
@@ -37,7 +37,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              outputPath: './img',
+              outputPath: './src/img',
               name: './goblin.png',
             },
           },
